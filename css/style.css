@@ -1,5 +1,16 @@
 :root {
+	--clr-orange: #ffa067;
+	--clr-purple: #5843be;
+	--clr-red: #fe7066;
+
+	--border: 0.5px solid lightGrey;
+	--border-radius: 10px;
+
 	--ff-primary: 'Poppins', sans-serif;
+
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-bold: 700;
 }
 
 html {
@@ -8,9 +19,20 @@ html {
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body {
 	font-family: var(--ff-primary);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+.container {
+	width: 100vw;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 6fr 3fr;
+	grid-template-columns: 'n m p';
 }
