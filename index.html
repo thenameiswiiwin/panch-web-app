@@ -5,7 +5,164 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		/>
 		<title>Panch</title>
 	</head>
-	<body></body>
+	<body>
+		<!-- CONTAINER -->
+		<div class="container">
+			<!-- NAVIGATION -->
+			<nav class="nav">
+				<div class="nav__logo">
+					<span>P.</span>
+				</div>
+				<a href="#">
+					<img src="/img/filter.png" alt="filter" class="nav__btn" />
+				</a>
+				<a href="#">
+					<img
+						src="/img/dashboard.png"
+						alt="dashboard"
+						class="nav__btn nav__btn--active"
+					/>
+				</a>
+				<a href="#">
+					<img src="/img/profile.png" alt="profile" class="nav__btn" />
+				</a>
+				<a href="#">
+					<img src="/img/stats.png" alt="stats" class="nav__btn" />
+				</a>
+			</nav>
+			<!-- DASHBOARD -->
+			<main class="dashboard">
+				<h1 class="dashboard__title">Progress Dashboard</h1>
+				<section class="dashboard__top">
+					<div class="dashboard__exam">
+						<p><span class="dashboard__subtitle">DEADLINE</span> 12:00</p>
+						<h2 class="dashboard__largeTitle">Exam - Unit 5</h2>
+						<p class="dashboard__subtitle">Spanish for beginners</p>
+						<div class="dashboard__test">
+							<img src="/img/profile-imgs.png" alt="profile images" />
+							<a href="#">Start testing</a>
+						</div>
+					</div>
+					<div class="dashboard__homework dashboard__todo">
+						<i class="far fa-check-circle"></i>
+						<p class="dashboard__homework-title">Homework</p>
+						<p class="dashboard__homework-subtitle">
+							For today's <br />lesson.
+						</p>
+					</div>
+					<div class="dashboard__reading dashboard__todo">
+						<i class="far fa-check-circle"></i>
+						<p class="dashboard__reading-title">Reading</p>
+						<p class="dashboard__reading-subtitle">25 words per <br />weeks.</p>
+					</div>
+				</section>
+				<section class="dashboard__middle">
+					<div class="dashboard__group">
+						<header class="dashboard__group-header">
+							<p class="dashboard__group-title">
+								Group Info <br />
+								<span class="dashboard__subtitle">
+									13 students in the group
+								</span>
+							</p>
+							<i class="far fa-bell"></i>
+						</header>
+						<main class="dashboard__group-homework">
+							<p class="dashboard__group-title">
+								Group homework <br />
+								<span class="dashboard__subtitle">
+									5 students from your group online now
+								</span>
+							</p>
+							<i class="fas fa-angle-right"></i>
+						</main>
+						<footer class="dashboard__group-footer">
+							<p class="dashboard__group-title">
+								Today's lesson <br />
+								<span class="dashboard__subtitle"> Unit 6 - Articles </span>
+							</p>
+							<p>12:00</p>
+						</footer>
+					</div>
+					<div class="dashboard__flagProgress">
+						<div class="dashboard__flatProgress-title">
+							<img src="/img/spain.png" alt="spain flag" />
+							<p class="dashboard__largeTitle">Spanish for <br />beginners</p>
+						</div>
+						<div class="dashboard__flagProgress-percent">
+							<p>75%</p>
+							<progress value="75" max="100"></progress>
+						</div>
+					</div>
+				</section>
+				<section class="dashboard__bottom">
+					<div class="dashboard__grammar dashboard__bot">
+						<div>
+							<i class="fas fa-pencil-alt icon-circle"></i>
+							<p class="dashboard__bottom-title">
+								Grammar <br /><span class="dashboard__subtitle"
+									>+ 30 grammar rules</span
+								>
+							</p>
+						</div>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="dashboard__dictionary dashboard__bot">
+            <i class="fas fa-spell-check icon-circle"></i>
+            <p class="dashboard__bottom-title">
+              Dictionary <br /><span class="dashboard__subtitle"
+                >+ 10 new words</span
+              >
+            </p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+          </div>
+				</section>
+			</main>
+			<!-- PROFILE -->
+			<main class="profile">
+        <div class="profile__picture">
+          <img src="/img/huy-nguyen.png" alt="huy nguyen" width="200px">
+          <p class="profile__largeTitle">Huy Nguyen</p>
+          <p class="profile__subtitle">Front End Developer</p>
+        </div>
+        <div class="profile__ads">
+          <div class="profile_adsBox">
+            <p class="profile__ads-title">Get -10% sell price <br><span>for Spanish A2 course</span></p>
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="profile__progres">
+          <div class="progile__largeTitle">Courses Progress</div>
+          <div class="profile__progressBox profile__grammar">
+            <div class="profile__percent">63%</div>
+            <i class="fas fa-pencil-alt" ></i>
+            <p class="profile__progress-title">Grammar <br><span>Learn new rules.</span></p>
+          </div>
+          <div class="profile__progressBox profile__dictionary">
+            <div class="profile__percent">78%</div>
+            <i class="fas fa-spell-check" ></i>
+            <p class="profile__progress-title">Dictionary<br><span>Learn 5 new words.</span></p>
+          </div>
+          <div class="profile__progressBox profile__reading">
+            <div class="profile__percent">34%</div>
+            <i class="fas fa-book-open" ></i>
+            <p class="profile__progress-title">Reading<br><span>Train your skill.</span></p>
+          </div>
+        </div>
+      </main>
+		</div>
+		<!-- CONTAINER END -->
+	</body>
 </html>
