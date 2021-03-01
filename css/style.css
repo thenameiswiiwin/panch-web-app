@@ -62,3 +62,51 @@ body {
 	font-size: 2rem;
 	font-weight: var(--fw-medium);
 }
+
+/* NAVIGATION */
+.nav {
+	background: var(--clr-grey);
+	display: grid;
+	grid-area: n;
+	grid-template-rows: repeat(8, 1fr);
+	place-items: center;
+}
+.nav__logo {
+	grid-row: 1 / 3;
+}
+.nav__logo p {
+	color: var(--clr-red);
+	font-size: 2rem;
+	font-weight: var(--fw-bold);
+	width: 4.375rem;
+	height: 4.375rem;
+	box-shadow: var(--bs-dark), var(--bs-light), inset var(--bs-inset-light),
+		inset var(--bs-inset-dark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav__filter {
+	grid-row: 3 / 4;
+}
+.nav__dashboard {
+	grid-row: 4 / 5;
+}
+.nav__profile {
+	grid-row: 5 / 6;
+}
+.nav__stats {
+	grid-row: 6 / 7;
+}
+.nav__btn {
+	width: 2.813rem;
+	height: 2.813rem;
+	opacity: 0.4;
+	padding: 0.625rem;
+}
+.nav__btn--active {
+	width: 3.75rem;
+	height: 3.75rem;
+	border-radius: 50%;
+	box-shadow: inset var(--bs-btn-inset-light), inset var(--bs-btn-inset-dark);
+}
