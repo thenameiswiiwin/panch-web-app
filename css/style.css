@@ -2,9 +2,12 @@
 	/* Color */
 	--clr-orange: #ffa067;
 	--clr-purple: #5843be;
+	--clr-purple-light: #f6f4ff;
 	--clr-red: #fe7066;
+	--clr-red-light: #feede6;
 	--clr-grey: #f1f3f6;
 	--clr-grey-light: #b9c2d1;
+	--clr-grey-dark: #808080;
 	--clr-black: #222;
 	--clr-white: #fff;
 	/* Border */
@@ -15,9 +18,8 @@
 	--bs-light: -5px -5px 8px rgba(255, 255, 255, 0.6);
 	--bs-inset-dark: -3px -3px 4px rgba(0, 0, 0, 0.2);
 	--bs-inset-light: 3px 3px 4px rgba(255, 255, 255, 0.8);
-	--bs-btn-inset-light: -3px -3px 4px rgba(255, 255, 255, 0.8);
 	--bs-btn-inset-dark: 3px 3px 10px rgba(0, 0, 0, 0.4);
-
+	--bs-btn-inset-light: -3px -3px 4px rgba(255, 255, 255, 0.8);
 	/* Font */
 	--ff-primary: 'Poppins', sans-serif;
 	--fw-light: 300;
@@ -41,6 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+	font-size: 16px;
 }
 .container {
 	width: 100vw;
@@ -109,4 +112,158 @@ body {
 	height: 3.75rem;
 	border-radius: 50%;
 	box-shadow: inset var(--bs-btn-inset-light), inset var(--bs-btn-inset-dark);
+}
+
+/* DASHBOARD */
+.dashboard {
+	padding: 0 6.25rem;
+	grid-area: d;
+	display: grid;
+	grid-template-rows: 1fr 1fr auto 1fr;
+}
+.dashboard > section {
+	margin-bottom: 2rem;
+}
+.dashboard__title {
+	color: var(--clr-black);
+	font-size: 4rem;
+	font-style: 3.4rem;
+	font-weight: var(--fw-medium);
+	letter-spacing: 0.3px;
+	place-self: end start;
+}
+/* Dashboard Top */
+.dashboard__top {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+	column-gap: 1.56rem;
+	align-content: start;
+}
+.dashboard__exam > *,
+.dashboard__homework > *,
+.dashboard__reading > * {
+	margin: 0.3rem 0;
+}
+.dashboard__exam {
+	background-color: var(--clr-purple);
+	border-radius: var(--border-radius);
+	color: var(--clr-white);
+	padding: 1.25rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+.dashboard__test {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.dashboard__test a {
+	color: var(--clr-white);
+}
+.dashboard__todo {
+	border-radius: var(--border-radius);
+	padding: 0.625rem 1.875rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+.dashboard__todo i {
+	font-size: 1.3rem;
+}
+.dashboard__homework {
+	background-color: var(--clr-red-light);
+	color: var(--clr-orange);
+}
+.dashboard__reading {
+	background-color: var(--clr-purple-light);
+	color: var(--clr-purple);
+}
+.dashboard__homework-title {
+	font-weight: var(--fw-medium);
+}
+.dashboard__homework-subtitle {
+	font-weight: var(--fw-light);
+}
+/* Dashboard Middle */
+.dashboard__middle {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.dashboard__group {
+	box-shadow: 4px 6px 20px var(--clr-grey-light);
+	border-radius: var(--border-radius);
+	padding: 1.875rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	height: 21.875rem;
+}
+.dashboard__group-header {
+	display: flex;
+	justify-content: space-between;
+}
+.dashboard__group-homework {
+	background-color: var(--clr-orange);
+	color: var(--clr-white);
+	padding: 1.25rem;
+	border-radius: var(--border-radius);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 9.375rem;
+}
+.dashboard__group-homework .title,
+.dashboard__group-homework .subtitle {
+	color: var(--clr-white);
+}
+.dashboard__group-footer {
+	display: flex;
+	justify-content: space-between;
+}
+.dashboard__flagProgress {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 2.5rem 5rem;
+}
+.dashboard__flagProgress img {
+	width: 3.125rem;
+	padding: 0.44rem;
+	box-shadow: 4px 6px 20px var(--clr-grey-light);
+	border-radius: 0.75rem;
+}
+progress {
+	border: none;
+	height: 0.5rem;
+}
+progress::-webkit-progress-value {
+	background-color: var(--clr-orange);
+	border-radius: 0.5rem;
+}
+progress::-webkit-progress-bar {
+	background-color: var(--clr-grey);
+	border-radius: 0.5rem;
+}
+/* Dashboard Bottom */
+.dashboard__bottom {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 1.56rem;
+}
+.dashboard__bot {
+	height: 6.25rem;
+	width: 100%;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.dashboard__bot > div {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: space-around;
+	align-items: center;
 }
