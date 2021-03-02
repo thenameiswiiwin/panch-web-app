@@ -1,0 +1,33 @@
+:root {
+	/* Color */
+	--clr-orange: #ffa067;
+	--clr-purple: #5843be;
+	--clr-purple-light: #f6f4ff;
+	--clr-red: #fe7066;
+	--clr-red-light: #feede6;
+	--clr-grey: #f1f3f6;
+	--clr-grey-light: #f9fafb;
+	--clr-grey-medium: #b9c2d1;
+	--clr-grey-dark: #808080;
+	--clr-black: #222;
+	--clr-white: #fff;
+
+	/* Border */
+	--border: 0.5px solid lightGrey;
+	--border-radius: 0.625rem;
+
+	/* Shadow */
+	--bs-dark: 5px 5px 8px rgba(0, 0, 0, 0.2);
+	--bs-light: -5px -5px 8px rgba(255, 255, 255, 0.6);
+	--bs-inset-dark: -3px -3px 4px rgba(0, 0, 0, 0.2);
+	--bs-inset-light: 3px 3px 4px rgba(255, 255, 255, 0.8);
+	--bs-btn-inset-dark: 3px 3px 10px rgba(0, 0, 0, 0.4);
+	--bs-btn-inset-light: -3px -3px 4px rgba(255, 255, 255, 0.8);
+
+	/* Font */
+	--ff-primary: 'Poppins', sans-serif;
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-medium: 500;
+	--fw-bold: 700;
+}

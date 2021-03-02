@@ -1,0 +1,36 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--ff-primary);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-size: 16px;
+}
+.container {
+	width: 100vw;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 6fr 3fr;
+	grid-template-areas: 'n d p';
+}
+.title {
+	font-weight: var(--fw-medium);
+	color: var(--clr-black);
+}
+.subtitle {
+	font-weight: var(--fw-normal);
+	font-style: 0.9rem;
+	color: var(--clr-grey-medium);
+}
+.largeTitle {
+	font-size: 2rem;
+	font-weight: var(--fw-medium);
+}
