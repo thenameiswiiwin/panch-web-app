@@ -6,7 +6,8 @@
 	--clr-red: #fe7066;
 	--clr-red-light: #feede6;
 	--clr-grey: #f1f3f6;
-	--clr-grey-light: #b9c2d1;
+	--clr-grey-light: #f9fafb;
+	--clr-grey-medium: #b9c2d1;
 	--clr-grey-dark: #808080;
 	--clr-black: #222;
 	--clr-white: #fff;
@@ -59,7 +60,7 @@ body {
 .subtitle {
 	font-weight: var(--fw-normal);
 	font-style: 0.9rem;
-	color: var(--clr-grey-light);
+	color: var(--clr-grey-medium);
 }
 .largeTitle {
 	font-size: 2rem;
@@ -79,10 +80,10 @@ body {
 }
 .nav__logo p {
 	color: var(--clr-red);
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: var(--fw-bold);
-	width: 4.375rem;
-	height: 4.375rem;
+	width: 5rem;
+	height: 5rem;
 	box-shadow: var(--bs-dark), var(--bs-light), inset var(--bs-inset-light),
 		inset var(--bs-inset-dark);
 	display: flex;
@@ -123,10 +124,9 @@ body {
 }
 .dashboard__title {
 	color: var(--clr-black);
-	font-size: 4rem;
-	font-style: 3.4rem;
+	font-size: 3.5rem;
 	font-weight: var(--fw-medium);
-	letter-spacing: 0.3px;
+	letter-spacing: 0.4px;
 	place-self: end start;
 }
 /* Dashboard Top */
@@ -176,11 +176,14 @@ body {
 	background-color: var(--clr-purple-light);
 	color: var(--clr-purple);
 }
-.dashboard__homework-title {
+.dashboard__homework-title,
+.dashboard__reading-title {
 	font-weight: var(--fw-medium);
 }
-.dashboard__homework-subtitle {
+.dashboard__homework-subtitle,
+.dashboard__reading-subtitle {
 	font-weight: var(--fw-light);
+	font-size: 0.875rem;
 }
 /* Dashboard Middle */
 .dashboard__middle {
@@ -189,7 +192,7 @@ body {
 	align-items: center;
 }
 .dashboard__group {
-	box-shadow: 4px 6px 20px var(--clr-grey-light);
+	box-shadow: 4px 6px 20px var(--clr-grey-medium);
 	border-radius: var(--border-radius);
 	padding: 1.875rem;
 	display: flex;
@@ -229,7 +232,7 @@ body {
 .dashboard__flagProgress img {
 	width: 3.125rem;
 	padding: 0.44rem;
-	box-shadow: 4px 6px 20px var(--clr-grey-light);
+	box-shadow: 4px 6px 20px var(--clr-grey-medium);
 	border-radius: 0.75rem;
 }
 progress {
@@ -267,7 +270,7 @@ progress::-webkit-progress-bar {
 	align-items: center;
 }
 .dashboard__bot .icon-circle {
-	box-shadow: 4px 6px 20px var(--clr-grey-light);
+	box-shadow: 4px 6px 20px var(--clr-grey-medium);
 	padding: 0.94rem;
 	border-radius: 50%;
 	font-size: 1.1rem;
@@ -280,3 +283,91 @@ progress::-webkit-progress-bar {
 }
 
 /* PROFILE */
+.profile {
+	background-color: var(--clr-grey-light);
+	padding: 0 6.25rem;
+	grid-area: p;
+	display: grid;
+	grid-template-rows: 30% 15% 55%;
+}
+.profile__picture {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.profile__picture img {
+	width: 6.875rem;
+	border-radius: 50%;
+}
+.profile__picture .subtitle {
+	font-weight: var(--fw-medium);
+}
+.profile__picture img,
+.profile__picture .largeTitle,
+.profile__picture .subtitle {
+	margin: 0.313rem 0;
+}
+.profile__adsBox {
+	border: var(--border);
+	border-radius: var(--border-radius);
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1.25rem;
+}
+.profile__ads i {
+	border-radius: var(--border-radius);
+	padding: 0.75rem 0.94rem;
+	box-shadow: 1px 1px 2px var(--clr-grey-medium);
+	color: var(--clr-orange);
+}
+.profile__progress {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+}
+.profile__progressBox {
+	height: 6.25rem;
+	width: 100%;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.profile__progressBox .subtitle {
+	font-size: 0.8rem;
+	font-weight: var(--fw-medium);
+}
+.profile__grammar .profile__percent {
+	color: var(--clr-purple);
+	font-weight: var(--fw-medium);
+	font-size: 1.3rem;
+}
+.profile__dictionary .profile__percent {
+	color: var(--clr-orange);
+	font-weight: var(--fw-medium);
+	font-size: 1.3rem;
+}
+.profile__reading .profile__percent {
+	color: var(--clr-red);
+	font-weight: var(--fw-medium);
+	font-size: 1.3rem;
+}
+.profile__progressBox i {
+	color: var(--clr-white);
+	padding: 1.25rem 1.13rem;
+	border-radius: var(--border-radius);
+}
+.profile__grammar i {
+	background-color: var(--clr-purple);
+}
+.profile__dictionary i {
+	background-color: var(--clr-orange);
+}
+.profile__reading i {
+	background-color: var(--clr-red);
+}
