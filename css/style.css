@@ -121,9 +121,6 @@ body {
 	display: grid;
 	grid-template-rows: 1fr 1fr auto 1fr;
 }
-.dashboard > section {
-	margin-bottom: 2rem;
-}
 .dashboard__title {
 	color: var(--clr-black);
 	font-size: 4rem;
@@ -189,6 +186,7 @@ body {
 .dashboard__middle {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
 }
 .dashboard__group {
 	box-shadow: 4px 6px 20px var(--clr-grey-light);
@@ -251,6 +249,7 @@ progress::-webkit-progress-bar {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 1.56rem;
+	align-items: center;
 }
 .dashboard__bot {
 	height: 6.25rem;
@@ -267,3 +266,17 @@ progress::-webkit-progress-bar {
 	justify-content: space-around;
 	align-items: center;
 }
+.dashboard__bot .icon-circle {
+	box-shadow: 4px 6px 20px var(--clr-grey-light);
+	padding: 0.94rem;
+	border-radius: 50%;
+	font-size: 1.1rem;
+}
+.dashboard__bot .fa-pencil-alt {
+	color: var(--clr-purple);
+}
+.dashboard__bot .fa-spell-check {
+	color: var(--clr-orange);
+}
+
+/* PROFILE */
